@@ -1,0 +1,498 @@
+body {
+  background-color: #fdfcfc;
+}
+
+.hiringhero {
+  background-image: url("https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+  /* height: 600px;
+    width: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* min-height: 100vh; */
+  min-height: 100vh;
+  min-width: 100%;
+  background-attachment: fixed;
+  
+}
+
+.overlay {
+  background: rgba(8, 8, 8, 0.595);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+.join {
+  font-size: 10vw;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 4px 2px 2px #000000;
+  background-color: #e4e2e23c;
+  
+
+
+}
+
+.mission {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Rokkitt', serif;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.share {
+  position: sticky;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100px;
+  height: 100px;
+
+}
+
+.share ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.share ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background: #406b86;
+  transition: .5s;
+  overflow: hidden;
+  transform: scale(0.95);
+  border-radius: 10px;
+}
+
+.share ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  color: #ffffff;
+  transition: .5s;
+}
+
+.share ul li a .fab {
+  transform: rotate(45deg);
+}
+
+.share ul li a:hover {
+  color: #fff;
+  background: #ff6e00;
+  transform: rotate(0deg);
+}
+
+.share ul.active li {
+  transform: scale(0.95);
+}
+
+.share ul.active li:nth-child(1) {
+  top: -100%;
+  left: -100%;
+  transition-delay: 0s;
+}
+
+.share ul.active li:nth-child(2) {
+  top: -100%;
+  left: 0%;
+  transition-delay: 0.2s;
+}
+
+.share ul.active li:nth-child(3) {
+  top: -100%;
+  left: 100%;
+  transition-delay: 0.4s;
+}
+
+.share ul.active li:nth-child(4) {
+  top: 0%;
+  left: 100%;
+  transition-delay: 0.6s;
+}
+
+.share ul.active li:nth-child(5) {
+  top: 100%;
+  left: 100%;
+  transition-delay: 0.8s;
+}
+
+.share ul.active li:nth-child(6) {
+  top: 100%;
+  left: 0%;
+  transition-delay: 1s;
+}
+
+.share ul.active li:nth-child(7) {
+  top: 100%;
+  left: -100%;
+  transition-delay: 1.2s;
+}
+
+.share ul.active li:nth-child(8) {
+  top: 0%;
+  left: -100%;
+  transition-delay: 1.4s;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6e00;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.toggle:before {
+  content: '\f1e0';
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 40px;
+  transform: rotate(-45deg);
+}
+
+.toggle.active:before {
+  content: '\f00d';
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 60px;
+}
+
+.why {
+  text-align: center;
+  font-family: 'Rokkitt', serif;
+  font-size: 17vw;
+}
+
+.fade-zoom {
+  animation-name: fade-zoom;
+	animation-duration: 2s;
+}
+
+@keyframes fade-zoom {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+ul {
+  text-align: left !important;
+  list-style-position: inside;
+
+}
+
+.statement {
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?w=2000");
+  /* animation-name: flyin-left;
+	animation-duration: 1s; */
+}
+/* 
+h2 {animation-name: flyin-left;
+	animation-duration: 1s;} */
+
+.flyin-left {
+  animation-name: flyin-left;
+  animation-duration: 1s;
+}
+
+@keyframes flyin-left { 
+	0% {
+		transform: translate(-4000px, 0px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes flyin-right { 
+	0% {
+		transform: translate(4000px, 0px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.flyin-right {
+  animation-name: flyin-right;
+  animation-duration: 1s;
+}
+
+@media (max-width: 3000px) {
+  .hiringhero {
+    height: 800px;
+  }
+}
+
+.currentopenings {
+  text-align: center;
+  background-color: #fdfcfc;
+
+}
+
+.currentheading {
+  font-family: 'Rokkitt', serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+
+}
+
+
+.wrapper {
+  max-width: 100%;
+  padding: 0 20px;
+  font-family: 'Rokkitt', serif;
+  width: 98%;
+}
+
+.wrapper .parent-tab,
+.wrapper .child-tab {
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label,
+.wrapper .child-tab label {
+  background: #406b86;
+  padding: 10px 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+.wrapper .parent-tab label:hover {
+  background: #ff6e00
+}
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+  border-radius: 3px 3px 0 0;
+  background: #ff6e00
+}
+
+.wrapper label span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #027f51;
+}
+
+.wrapper .child-tab label span {
+  font-size: 17px;
+}
+
+.parent-tab label .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #ff6e00;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #ff6e00
+}
+
+
+.parent-tab label .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+  content: '\f068';
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+  max-height: 100vh;
+}
+
+.tab-3 input:checked~.content {
+  padding: 15px 20px;
+}
+
+.parent-tab .content p,
+.child-tab .sub-content p {
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.child-tab .sub-content p {
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+
+.wrapper {
+  max-width: 100%;
+  padding: 0 20px;
+  font-family: 'Rokkitt', serif;
+}
+
+.wrapper .parent-tab,
+.wrapper .child-tab {
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label,
+.wrapper .child-tab label {
+  background: #406b86;
+  padding: 10px 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+.wrapper .parent-tab label:hover {
+  background: #ff6e00
+}
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+  border-radius: 3px 3px 0 0;
+  background: #ff6e00
+}
+
+.wrapper label span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #027f51;
+}
+
+.wrapper .child-tab label span {
+  font-size: 17px;
+}
+
+.parent-tab label .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #ff6e00;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #ff6e00
+}
+
+.parent-tab label .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+  content: '\f068';
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+  max-height: 100vh;
+}
+
+.tab-3 input:checked~.content {
+  padding: 15px 20px;
+}
+
+.parent-tab .content p,
+.child-tab .sub-content p {
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.child-tab .sub-content p {
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
